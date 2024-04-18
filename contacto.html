@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Cabecera -->
+<head>
+  <title>Mi Sitio Web - Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/contacto.css">
+  <link rel="icon" href="./images/paw.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+</head>
+
+<body>
+
+  <!-- Barra de Navegación -->
+  <div class="top">
+    <div class="bar theme top left-align large">
+      <a href="./index.html" class="bar-item button hover-white">Inicio</a>
+      <a href="./perros.html" class="bar-item button hover-white">Perros</a>
+      <a href="./gatos.html" class="bar-item button hover-white">Gatos</a>
+      <a href="./pajaros.html" class="bar-item button hover-white">Pajaros</a>
+      <a href="./contacto.html" class="bar-item button theme-l1">Contacto</a>
+
+    </div>
+  </div>
+
+
+  <!-- Main -->
+  <div class="main">
+
+    <form>
+      <div id="form-container">
+        <div class="form-inner-container">
+
+          <h1>Contactanos</h1>
+
+          <label for="id">NIF/CIF:</label>
+          <input type="text" name="id" id="id" maxlength="9" size="10" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" placeholder="Tu número identificador" required>
+
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="usuario123@example.com" required>
+
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="123456789">
+
+          <label for="gender">Genero:</label>
+          <select id="gender" name="gender">
+            <option value="male">Hombre</option>
+            <option value="female">Mujer</option>
+            <option value="other">Otro</option>
+          </select>
+
+          <label for="studies">Estudios finalizados:</label>
+          <select name="studies" id="studies">
+            <option value="infantile">Educación Infantil</option>
+            <option value="primary">Educación Primaria</option>
+            <option value="secondary">Educación Secundaria Obligatoria (ESO)</option>
+            <option value="bachelor">Bachillerato</option>
+            <option value="professional">Formación Profesional (FP)</option>
+            <option value="university">Enseñanzas universitarias</option>
+            <option value="special">Enseñanzas de régimen especial</option>
+          </select>
+
+
+        </div>
+        <div class="inner-container">
+          <label>Mascotas interesado:
+            <label for="perros">
+              <input type="checkbox" name="mascotas[]" id="perros" value="Perros">Perros</label>
+            <label for="gatos">
+              <input type="checkbox" name="mascotas[]" id="gatos" value="Gatos">Gatos</label>
+            <label for="pajaros">
+              <input type="checkbox" name="mascotas[]" id="pajaros" value="Pajaros">Pajaros</label>
+            <label for="peces">
+              <input type="checkbox" name="mascotas[]" id="peces" value="Peces">Peces</label>
+            <label for="reptiles">
+              <input type="checkbox" name="mascotas[]" id="reptiles" value="Reptiles">Reptiles</label>
+            <label for="roedores">
+              <input type="checkbox" name="mascotas[]" id="roedores" value="Roedores">Roedores</label>
+          </label>
+
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+      </div>
+
+
+
+
+      <label for="subscribe" id="label-subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        Suscríbete a nuestro boletín
+      </label>
+
+      <div id="submit" name="submit">
+        <input type="submit" value="Registrar">
+      </div>
+
+
+    </form>
+
+    <footer id="myFooter">
+      <div class="container theme-l2 padding-32">
+        <h4></h4>
+      </div>
+  
+      <div class="container theme-l1">
+        <p>© 2024 Mi Sitio Web | Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+
+    <!-- END MAIN -->
+  </div>
+
+ 
+
+</body>
+
+</html>
